@@ -1,0 +1,5 @@
+source "https://rubygems.org/"
+
+
+gem "fxruby"
+# for more informations https://rubydoc.info/gems/fxruby/frames
