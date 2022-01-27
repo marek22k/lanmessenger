@@ -154,7 +154,9 @@ class BLMSocket
   
   def send_file_via_socket task, socket
       puts "Status: Reading file"
-      content = File.read task[2]
+      fil = File.open task[2], "rb"
+      content = fil.read
+      fil.close
       puts "Status: Calculate checksum"
       file_digest = Digest::MD5.hexdigest content
     
